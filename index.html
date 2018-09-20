@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset= "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Resume Form</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="grid.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div id="wrapper" class="row">
+		<div class="col-1"></div>
+		<div class="col-10" id="main-form">
+			<form name="myForm" action="#" method="post" enctype="multipart/form-data">
+			<div class="row">
+				<div class="content">
+					<h3 class="center">RESUME FORM<br><span id="heading-small">(Enter all the details)</span></h3>
+					<p class="error"></p>
+					<div class="col-3 col-m-6 center-left">
+						<label>Full Name<span class="asterik">*</span></label>
+						<select name="name-title">
+							<option value="select" selected>Select title</option>
+							<option value="Mr">Mr.</option>
+							<option value="Miss">Miss</option>
+							<option value="Mrs">Mrs.</option>
+						</select> 
+					</div>
+					<div class="col-3 col-m-6 center-left">
+						<input type="text" name="fname" placeholder="First Name" required>
+					</div>
+					<div class="col-3 col-m-6 center-left">
+						<input type="text" name="mname" placeholder="Middle Name">
+					</div>
+					<div class="col-3 col-m-6 center-left">
+						<input type="text" name="lname" placeholder="Last Name" required>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="content center-left">
+					<div class="col-3 col-m-6">
+						<p id="other-details">Other details<span class="asterik">*</span></p>
+					</div>
+					<div class="col-3 col-m-6">
+						<input type="number" name="num" placeholder="Contact no." min="7000000000" max="9999999999" required>
+					</div>
+					<div class="col-3 col-m-6">
+						<input type="email" name="email" placeholder="Email address" required>
+					</div>
+					<div class="col-3 col-m-6">
+						<input type="url" name="url" placeholder="Enter URL">
+					</div>
+				</div>
+			</div>
+			<div class="row no-bg">
+				<div class="content">
+					<p class="heading">Upload pic<span class="asterik">*</span></p>
+					<div class="col-4 center">
+						<div class="pad-bot">
+							<input type="file" name="dp" id="dp">
+							<label for="dp" id="dp-label">Upload a pic</label>
+						</div>
+					</div>
+					<div class="col-4 center">
+						<img src="display-pic.jpg">
+					</div>
+					<div class="col-4 center">
+						<button type="button" name="upload-button">View Demo</button>
+					</div>
+				</div>
+			</div>
+			<div class="row pad-top">
+				<div class="content">
+					<p class="heading">Other Acheivements</p>
+					<div class="col-3 col-m-6 center"><input type="text" name="acheive1" placeholder="Enter acheivements..."></div>
+					<div class="col-3 col-m-6 center"><input type="text" name="acheive2" placeholder="Enter acheivements..."></div>
+					<div class="col-3 col-m-6 center"><input type="text" name="acheive3" placeholder="Enter acheivements..."></div>
+					<div class="col-3 col-m-6 center"><input type="text" name="acheive4" placeholder="Enter acheivements..."></div>
+				</div>
+			</div>
+			<div class="row no-width" id="qual-lang-section">
+				<div class="content">
+					<div class="col-6">
+						<p class="heading edu-lang-heading">Educational Qualifications<span class="asterik">*</span></p>
+						<div class="check-div"><input type="checkbox" name="qual1" value="tenth"><label>10<sup>th</sup></label></div>
+						<div class="check-div"><input type="checkbox" name="qual2" value="twelveth"><label>12<sup>th</sup></label></div>
+						<div class="check-div"><input type="checkbox" name="qual3" value="graduate"><label>Graduation</label></div>
+						<div class="check-div"><input type="checkbox" name="qual4" value="post-graduate"><label>Post Graduation</label></div>
+						<div class="check-div"><input type="checkbox" name="qual5" value="diploma"><label>Diploma</label></div>
+					</div>
+					<div class="col-6">
+						<p class="heading edu-lang-heading">Languages<span class="asterik">*</span></p>
+						<div class="check-div"><input type="checkbox" name="lang1" value="english"><label>English</label></div>
+						<div class="check-div"><input type="checkbox" name="lang2" value="hindi"><label>Hindi</label></div>
+						<div class="check-div"><input type="checkbox" name="lang3" value="french"><label>French</label></div>
+						<div class="check-div"><input type="checkbox" name="lang4" value="german"><label>German</label></div>
+						<div class="check-div"><input type="checkbox" name="lang5" value="espanol"><label>Espanol</label></div>
+						<div class="check-div"><input type="checkbox" name="lang6" value="spanish"><label>Spanish</label></div>
+					</div>
+				</div>
+			</div>
+			<div class="row no-width pad-bot" id="skill-section">
+				<div class="content">
+					<p class="heading">Select skills you know<span class="asterik">*</span></p>
+					<div class="col-12">
+						<div class="check-div"><input type="checkbox" name="skill1" value="graphic-design"><label>Graphic Design</label></div>
+						<div class="check-div"><input type="checkbox" name="skill2" value="web-design"><label>Web Design</label></div>
+						<div class="check-div"><input type="checkbox" name="skill3" value="typography"><label>Typography</label></div>
+						<div class="check-div"><input type="checkbox" name="skill4" value="Software1"><label>Software #1</label></div>
+						<div class="check-div"><input type="checkbox" name="skill5" value="Software2"><label>Software #2</label></div>
+						<div class="check-div"><input type="checkbox" name="skill6" value="Software3"><label>Software #3</label></div>
+						<div class="check-div"><input type="checkbox" name="skill7" value="Software4"><label>Software #4</label></div>
+					</div>
+				</div>
+			</div>
+			<div class="row no-bg center">
+				<div class="content">
+					<p class="heading left">Mention past working experience</p>
+					<div class="col-3 col-m-6">
+						<div class="margin-bot">
+							<label>From: </label><input class="wrk-exp-inp" type="date" name="start-date1" size="10">
+							<label class="to">To: </label><input  class="wrk-exp-inp" type="date" name="end-date1" size="10">
+						</div>
+						<input  class="margin-bot" type="text" name="past1" size="30" placeholder="Title and Designation"><br>
+						<textarea rows="5" cols="30">Project/Work details</textarea>
+					</div>
+					<div class="col-3 col-m-6">
+						<div class="margin-bot">
+							<label>From: </label><input class="wrk-exp-inp" type="date" name="start-date2" size="10">
+							<label class="to">To: </label><input  class="wrk-exp-inp" type="date" name="end-date2" size="10">
+						</div>
+						<input  class="margin-bot" type="text" name="past2" size="30" placeholder="Title and Designation"><br>
+						<textarea rows="5" cols="30">Project/Work details</textarea><br>
+					</div>
+					<div class="col-3 col-m-6">
+						<div class="margin-bot">
+							<label>From: </label><input class="wrk-exp-inp" type="date" name="start-date3" size="10">
+							<label class="to">To: </label><input  class="wrk-exp-inp" type="date" name="end-date3" size="10">
+						</div>
+						<input  class="margin-bot" type="text" name="past3" size="30" placeholder="Title and Designation"><br>
+						<textarea rows="5" cols="30">Project/Work details</textarea>
+					</div>
+					<div class="col-3 col-m-6">
+						<div class="margin-bot">
+							<label>From: </label><input class="wrk-exp-inp" type="date" name="start-date4" size="10">
+							<label class="to">To: </label><input  class="wrk-exp-inp" type="date" name="end-date4" size="10">
+						</div>
+						<input  class="margin-bot" type="text" name="past4" size="30" placeholder="Title and Designation"><br>
+						<textarea rows="5" cols="30">Project/Work details</textarea>
+					</div>
+				</div>
+			</div>
+			<div class="row center">
+				<div class="content">
+					<div class="col-4">
+						<p class="heading rel-head left">Write something about yourself </p><br>
+						<textarea class="center" rows="5" cols="25">Write something here... </textarea>
+					</div>
+					<div class="col-4">
+						<p class="heading rel-head left">Hobbies</p><br>
+						<input class="margin-bot" type="text" name="hobby1" placeholder="Enter your hobby..."><br>
+						<input class="margin-bot" type="text" name="hobby2" placeholder="Enter your hobby..."><br>
+						<input class="margin-bot" type="text" name="hobby3" placeholder="Enter your hobby..."><br>
+						<input class="margin-bot" type="text" name="hobby4" placeholder="Enter your hobby...">
+					</div>
+					<div class="col-4"><p class="heading rel-head left">Address<span class="asterik">*</span></p><br>
+						<textarea name="address" rows="5" cols="25"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="bottom">
+				<div class="col-12 center">
+					<button type="button" onclick="validate()"> SUBMIT </button>
+					<button type="reset">RESET</button>
+				</div>
+			</div>
+			</form>
+		</div>
+		<div class="col-1"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('fonts/roboto.regular.eot');
+	src: local('☺'), url('fonts/roboto.regular.woff') format('woff'), url('fonts/roboto.regular.ttf') format('truetype'), url('fonts/roboto.regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body, div{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: 'Roboto';
+	font-size: 0.98em;
+}
+body{
+	background-color: #eee1ba;
+}
+h3{
+	font-size: 1.7em;
+	color: #d7273f;
+}
+#wrapper{
+	padding: 30px 0px;
+}
+#main-form{
+	padding: 0;
+}
+#heading-small{
+	color: red;
+	font-size: 0.5em;
+	margin-left: 5px;
+}
+#bottom{
+	padding: 20px 0;
+}
+#error{
+	color: red;
+}
+.check-div{
+	display:inline-block;
+	width:130px;
+}
+#other-details{
+	margin: 0;
+}
+#dp{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+ #dp + label{
+    position: relative;
+    top: 15px;
+}
+.pad-top{
+	padding-top: 20px;
+}
+.pad-bot{
+	padding-bottom: 20px;
+}
+.heading{
+	color: #d7273f;
+	position: relative;
+	left: 15px;
+	display: table;
+}
+.rel-head{
+	position: relative;
+	right: 15px;
+}
+.edu-lang-heading{
+	left: -1px;
+}
+.content{
+	padding: 0 5px 0 15px;
+}
+.wrk-exp-inp{
+	width:20%;
+	padding: 5px 0;
+}
+img{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 5px solid #d7273f;
+}
+.left, .right{
+	text-align: left;
+}
+.center{
+	text-align: center;
+}
+.center-left{
+	text-align: center;
+}
+.no-bg{
+	background-color: white;
+}
+.no-width input{
+	width: auto;
+}
+.asterik{
+	color:red;
+	padding-left: 10px;
+}
+.to{
+	margin-left: 20px;
+}
+.margin-bot{
+	margin-bottom: 2px;
+}
+input, textarea{
+	padding: 10px;
+    border: 1px solid #c97c7c;
+	border-radius: 4px;
+	width: 80%;
+}
+textarea{
+	resize: none;
+}
+select{
+	border: 1px solid #c97c7c;
+	border-radius: 4px;
+	margin-left:20px;
+	height: 30px;
+	padding: 0;
+}
+input:focus, textarea:focus{
+	background-color: #f8f1f1;
+	border:none;
+}
+button, #dp + label{
+	padding: 15px 20px;
+	background-color: #d7273f;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+button:hover, #dp:focus + label, #dp + label:hover {
+	background-color: #bd1c32;
+}
+input::placeholder {
+  color: #100e0e;
+}
